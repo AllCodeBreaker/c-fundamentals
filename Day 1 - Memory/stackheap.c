@@ -27,8 +27,8 @@ int main(){
 
     
     printf("\nDynamic allocations (malloc)\n");
-    printf("Numbers: %d     | Address: %p | Size: %ld\n", *numbers, numbers, sizeof(numbers));
-    printf("Letters: %c     | Address: %p | Size: %ld\n", *letters, letters, sizeof(letters));
+    printf("Numbers: %d     | Address: %p | Size: %ld\n", *numbers, numbers, 5 * sizeof(int));
+    printf("Letters: %c     | Address: %p | Size: %ld\n", *letters, letters, 5 * sizeof(char));
     
     free(letters);
     free(numbers);
